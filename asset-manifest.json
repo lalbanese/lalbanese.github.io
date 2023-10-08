@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/albanese.github.io/static/js/main.f5dc91df.chunk.js",
+    "main.js.map": "/albanese.github.io/static/js/main.f5dc91df.chunk.js.map",
+    "runtime-main.js": "/albanese.github.io/static/js/runtime-main.d69017e4.js",
+    "runtime-main.js.map": "/albanese.github.io/static/js/runtime-main.d69017e4.js.map",
+    "static/js/2.98baddef.chunk.js": "/albanese.github.io/static/js/2.98baddef.chunk.js",
+    "static/js/2.98baddef.chunk.js.map": "/albanese.github.io/static/js/2.98baddef.chunk.js.map",
+    "index.html": "/albanese.github.io/index.html",
+    "precache-manifest.fcc188fb608f783ab0afc1e1c00de0d7.js": "/albanese.github.io/precache-manifest.fcc188fb608f783ab0afc1e1c00de0d7.js",
+    "service-worker.js": "/albanese.github.io/service-worker.js",
+    "static/js/2.98baddef.chunk.js.LICENSE.txt": "/albanese.github.io/static/js/2.98baddef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d69017e4.js",
+    "static/js/2.98baddef.chunk.js",
+    "static/js/main.f5dc91df.chunk.js"
+  ]
+}
