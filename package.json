@@ -1,6 +1,6 @@
 {
   "name": "lalbanese.github.io",
-  "homepage": "http://albanese.github.io/albanese.github.io",
+  "homepage": "http://lalbanese.github.io/lalbanese.github.io",
   "version": "0.0.2",
   "dependencies": {
     "@material-ui/core": "4.11.0",
