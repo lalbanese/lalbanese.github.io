@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     marginTop: "25vh",
     width: (props) => (props.thinScreen ? "100%" : "75%"),
-    marginBottom: '35vh',
+    marginBottom: "35vh",
   },
   sectionTitle: {
     textAlign: "left",
@@ -73,7 +73,10 @@ export default function Contact(props) {
     <div className={classes.root} id="contact">
       <div className={classes.sectionTitle}>03. Get In Touch</div>
       <div className={classes.info}>
-        Feel free to reach out and say hello! My current work with H2Ok Innovations is largely under NDA, so contact me for more information. I'm always looking for new projects, and would love to collaborate on something cool.
+        Feel free to reach out and say hello! My current work with H2Ok
+        Innovations is largely under NDA, so contact me for more information.
+        I'm always looking for new projects, and would love to collaborate on
+        something cool.
       </div>
       <div className={classes.centerButton}>
         <a

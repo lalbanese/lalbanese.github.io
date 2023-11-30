@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -90,12 +91,13 @@ function ShowcaseInformation(props) {
   const project = props.project;
 
   return (
-    <a
-      href={project.data.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes.a}
-    >
+    // <a
+    //   href={project.data.github}
+    //   target="_blank"
+    //   rel="noopener noreferrer"
+    //   className={classes.a}
+    // >
+    <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
       <div className={classes.root}>
         <div className={classes.featured}>Featured Project</div>
         <div className={classes.projectTitle}>{project.title}</div>
@@ -120,7 +122,7 @@ function ShowcaseInformation(props) {
           </div>
         )}
       </div>
-    </a>
+    </Link>
   );
 }
 

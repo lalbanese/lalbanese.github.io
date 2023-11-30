@@ -3,7 +3,7 @@ import ProjectTemplate from "./ProjectTemplate";
 import { imagePath } from "./ProjectCommon";
 import Images from "./Images";
 
-const name = 'hexapod';
+const name = "hexapod";
 const title = "Hexapod Robot";
 const path = "hexapod";
 const coverImage = "hexapod_isometric.JPG";

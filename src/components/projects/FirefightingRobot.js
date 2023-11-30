@@ -22,10 +22,10 @@ export default function Component() {
           `${imagePath}/firefighting/firefighting_1.JPG`,
         ]}
       />
-      This robot is one of the first I've made from scratch, and was made for
-      the Trinity International Robotic Firefighting Competition in the Spring
-      of 2018. It's task was to listen for a tone, and when signaled would begin
-      to autonomously navigate a maze and extinguish a fire. It was powered by a
+      This robot is one of the first I made in college, and was made for the
+      Trinity International Robotic Firefighting Competition in the Spring of
+      2018. It's task was to listen for a tone, and when signaled would begin to
+      autonomously navigate a maze and extinguish a fire. It was powered by a
       Raspberry Pi Zero and was surrounded by ultrasonic distance sensors to
       detect the walls of the maze.
       <Images space images={[`${imagePath}/firefighting/firefighting_2.JPG`]} />

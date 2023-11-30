@@ -84,14 +84,22 @@ export default function About(props) {
             <StyledLink
               href="https://www.h2okinnovations.com"
               text="H2Ok Innovations"
-            />.
+            />
+            .
             <br />
             <br />
-            In my free time, I build robots and design
-            embedded systems. My interests are in robotics, mechatronics, and
-            bioinspired design. I also enjoy refereeing combat robot competitions at <StyledLink href="https://www.nhrl.io" text="NHRL" />. Previously I've worked at the{" "}
+            In my free time, I build robots and design embedded systems. My
+            interests are in robotics, mechatronics, and bioinspired design. I
+            also enjoy refereeing combat robot competitions at{" "}
+            <StyledLink href="https://www.nhrl.io" text="NHRL" />. Previously
+            I've worked at the{" "}
             <StyledLink href="https://nolop.org/" text="Nolop Makerspace" />
-            &nbsp; and the <StyledLink href="https://matthewawoodward.wixsite.com/rlblab" text="RLB Lab" /> at Tufts University.
+            &nbsp; and the{" "}
+            <StyledLink
+              href="https://matthewawoodward.wixsite.com/rlblab"
+              text="RLB Lab"
+            />{" "}
+            at Tufts University.
           </div>
         </Grid>
 

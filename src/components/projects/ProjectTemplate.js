@@ -66,9 +66,7 @@ export default function ProjectTemplate(props) {
       <Toolbar />
 
       <div className={classes.root}>
-        <div className={classes.title}>
-          {props.title}
-        </div>
+        <div className={classes.title}>{props.title}</div>
         <div className={classes.children}>{props.children}</div>
 
         <br />

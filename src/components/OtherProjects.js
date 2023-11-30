@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Grid from "@material-ui/core/Grid";
@@ -20,6 +20,13 @@ import * as Hexapod from "./projects/Hexapod";
 import * as RPiUPS from "./projects/RaspberryPiUPS";
 import * as Cuttlesnake from "./projects/Cuttlesnake";
 import * as RaspberryPiUPS from "./projects/RaspberryPiUPS";
+import * as Balancing from "./projects/Balancing";
+import * as Clock from "./projects/Clock";
+import * as Drawing from "./projects/Drawing";
+import * as FirstPCBs from "./projects/FirstPCBs";
+import * as LasercutProjects from "./projects/LasercutProjects";
+import * as LegoRobots from "./projects/LegoRobots";
+import * as WaterReminder from "./projects/WaterReminder";
 
 const thinScreen = window.screen.width < 750;
 
@@ -87,7 +94,7 @@ function ProjectCard(props) {
           <div className={classes.folder}>
             <FolderIcon fontSize="large" />
           </div>
-{/*          <div className={classes.github}>
+          {/*          <div className={classes.github}>
             <GitHubIcon fontSize="large" />
           </div>*/}
         </div>
@@ -95,11 +102,11 @@ function ProjectCard(props) {
           <div className={classes.title}>{project.title}</div>
           <div className={classes.description}>{project.description}</div>
         </div>
-{/*        <div className={classes.technology}>
+        {/*        <div className={classes.technology}>
           {project.technology.join("  ")}
         </div>*/}
       </div>
-      </Link>
+    </Link>
   );
 }
 
@@ -146,14 +153,14 @@ const showcaseStyles = makeStyles((theme) => ({
 export default function Showcase(props) {
   const classes = showcaseStyles({ thinScreen });
   const projects = [
+    Clock,
+    Balancing,
+    Drawing,
     Couch,
-    Cuttlesnake,
-    FirefightingRobot,
+    LasercutProjects,
+    WaterReminder,
   ];
-  const fullProjects = [
-    ...projects,
-    RaspberryPiUPS,
-  ];
+  const fullProjects = [...projects, FirstPCBs, LegoRobots, FirefightingRobot];
   const [toShow, setToShow] = useState(projects);
   const [more, setMore] = useState(false);
 
