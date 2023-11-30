@@ -24,7 +24,7 @@ export default function Component() {
       <br />
       <Images
         images={[
-          `${imagePath}/lasercut/triangleearrings.JPG`,
+          `${imagePath}/lasercut/triangleearrings.jpg`,
           `${imagePath}/lasercut/diamondearrings.jpg`,
           `${imagePath}/lasercut/circleearrings.jpg`,
         ]}
@@ -32,14 +32,14 @@ export default function Component() {
       <Images
         space
         images={[
-          `${imagePath}/lasercut/cutdrawing.jpg`,
-          `${imagePath}/lasercut/astrolabe_front.jpg`,
-          `${imagePath}/lasercut/astrolabe_back.jpg`,
+          `${imagePath}/lasercut/cutdrawing.JPG`,
+          `${imagePath}/lasercut/astrolabe_front.JPG`,
+          `${imagePath}/lasercut/astrolabe_back.JPG`,
         ]}
       />
       <Images
         images={[
-          `${imagePath}/lasercut/coasters.jpg`,
+          `${imagePath}/lasercut/coasters.JPG`,
           `${imagePath}/lasercut/dogcat.jpg`,
           `${imagePath}/lasercut/allearrings.jpg`,
         ]}

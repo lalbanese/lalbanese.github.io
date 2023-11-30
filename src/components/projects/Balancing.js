@@ -55,7 +55,7 @@ export default function Component() {
         <Grid item xs={gridSize}>
           <img
             className={classes.image}
-            src={`${imagePath}/balancing/balancing_2.JPG`}
+            src={`${imagePath}/balancing/balancing_2.jpg`}
             alt=""
           />
         </Grid>
@@ -64,14 +64,14 @@ export default function Component() {
         <Grid item xs={gridSize}>
           <img
             className={classes.image}
-            src={`${imagePath}/balancing/balancing_1.JPG`}
+            src={`${imagePath}/balancing/balancing_1.jpg`}
             alt=""
           />
         </Grid>
         <Grid item xs={gridSize}>
           <img
             className={classes.image}
-            src={`${imagePath}/balancing/balancing_3.JPG`}
+            src={`${imagePath}/balancing/balancing_3.jpg`}
             alt=""
           />
         </Grid>
