@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   // },
   info: {
     color: slate,
-    fontSize: (props) => (props.thinScreen ? "1.1em" : "1.5em"),
+    fontSize: (props) => (props.thinScreen ? "1.5em" : "1.5em"),
     // width: (props) => (props.thinScreen ? "100%" : "60%"),
     margin: "auto",
     textAlign: "left",
