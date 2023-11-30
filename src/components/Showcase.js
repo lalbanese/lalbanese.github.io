@@ -108,19 +108,6 @@ function ShowcaseInformation(props) {
           </div>
         ))}
         {!thinScreen && <br />}
-        {project.data && project.data.github && !thinScreen && (
-          <div className={classes.icons}>
-            {/*            <a
-              href={project.data.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classes.a}
-            >
-*/}{" "}
-            <GitHubIcon />
-            {/*</a>*/}
-          </div>
-        )}
       </div>
     </Link>
   );

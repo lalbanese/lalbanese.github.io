@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
@@ -114,7 +115,14 @@ function FullToolBar(props) {
 
   return (
     <Toolbar className={classes.root}>
-      <img className={classes.logo} src="static/logo.png" alt="" />
+      <Link to={`/`} style={{ textDecoration: "none" }}>
+        <img
+          className={classes.logo}
+          src="static/logo.png"
+          alt=""
+          draggable="false"
+        />
+      </Link>
 
       <section className={classes.rightToolbar}>{props.children}</section>
     </Toolbar>
