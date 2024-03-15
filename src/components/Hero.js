@@ -13,14 +13,14 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     top: (props) =>
       props.smallScreen ? `${offsetTop / 3}vh` : `${offsetTop}vh`,
-    width: (props) => (props.smallScreen ? "95%" : "70%"),
+    width: (props) => (props.smallScreen ? "95%" : "80%"),
     margin: "auto",
   },
   hello: {
     fontFamily: fontMono,
     color: orange,
     fontSize: "1em",
-    marginBottom: "24px",
+    marginBottom: "16px",
   },
   intro: {
     fontWeight: "600",
@@ -30,11 +30,16 @@ const useStyles = makeStyles((theme) => ({
   },
   name: {
     color: llslate,
+    marginBottom: "24px",
+    // borderBottom: `1px solid ${slate}`,
   },
   build: {
-    color: slate,
+    color: orange,
     fontSize: "0.75em",
-    marginBottom: "8px",
+    marginBottom: "16px",
+    fontFamily: fontMono,
+    fontWeight: "500",
+    fontSize: "0.5em",
   },
   about: {
     fontFamily: fontSans,
@@ -70,7 +75,7 @@ export default function Hero(props) {
       <div className={classes.hello}>Hi, my name is</div>
       <div className={classes.intro}>
         <div className={classes.name}>Libby Albanese</div>
-        <div className={classes.build}>engineer | designer | maker</div>
+        <div className={classes.build}>I design electronics.</div>
       </div>
 
       <div className={classes.about}>
@@ -81,7 +86,7 @@ export default function Hero(props) {
           href="https://www.h2okinnovations.com"
           text="H2Ok Innovations"
         />{" "}
-        doing end-to-end product design on electro-mechanical systems.
+        doing full stack product design of electro-mechanical systems.
       </div>
 
       <div className={classes.buttonGroup}>

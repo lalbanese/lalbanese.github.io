@@ -152,15 +152,14 @@ const showcaseStyles = makeStyles((theme) => ({
 
 export default function Showcase(props) {
   const classes = showcaseStyles({ thinScreen });
-  const projects = [
-    Clock,
-    Balancing,
-    Drawing,
-    Couch,
-    LasercutProjects,
+  const projects = [RPiUPS, Clock, Balancing, Drawing, Couch, LasercutProjects];
+  const fullProjects = [
+    ...projects,
     WaterReminder,
+    FirstPCBs,
+    LegoRobots,
+    FirefightingRobot,
   ];
-  const fullProjects = [...projects, FirstPCBs, LegoRobots, FirefightingRobot];
   const [toShow, setToShow] = useState(projects);
   const [more, setMore] = useState(false);
 

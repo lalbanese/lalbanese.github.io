@@ -10,6 +10,7 @@ import * as FirstPCBs from "./FirstPCBs";
 import * as LasercutProjects from "./LasercutProjects";
 import * as LegoRobots from "./LegoRobots";
 import * as WaterReminder from "./WaterReminder";
+import * as H2Ok from "./H2OkSystem";
 
 export default {
   hexapod: Hexapod,
@@ -25,4 +26,5 @@ export default {
   lasercut: LasercutProjects,
   legorobots: LegoRobots,
   waterreminder: WaterReminder,
+  h2ok: H2Ok,
 };

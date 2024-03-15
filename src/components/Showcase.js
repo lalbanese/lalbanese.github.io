@@ -16,6 +16,7 @@ import { SectionHeader } from "./Common";
 import * as Hexapod from "./projects/Hexapod";
 import * as CuttleSnake from "./projects/Cuttlesnake";
 import * as RPiUPS from "./projects/RaspberryPiUPS";
+import * as H2Ok from "./projects/H2OkSystem";
 
 const thinScreen = window.screen.width < 950;
 
@@ -89,27 +90,42 @@ const showcaseInformationStyles = makeStyles((theme) => ({
 function ShowcaseInformation(props) {
   const classes = showcaseInformationStyles({ ...props.params, thinScreen });
   const project = props.project;
+  const body = (
+    <div className={classes.root}>
+      <div className={classes.featured}>Featured Project</div>
+      <div className={classes.projectTitle}>{project.title}</div>
+      <div className={classes.description}>{project.description}</div>
+      {project.technology.map((key) => (
+        <div className={classes.technology} key={key}>
+          {key}
+        </div>
+      ))}
+      {!thinScreen && <br />}
+    </div>
+  );
 
   return (
-    // <a
-    //   href={project.data.github}
-    //   target="_blank"
-    //   rel="noopener noreferrer"
-    //   className={classes.a}
-    // >
-    <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
-      <div className={classes.root}>
-        <div className={classes.featured}>Featured Project</div>
-        <div className={classes.projectTitle}>{project.title}</div>
-        <div className={classes.description}>{project.description}</div>
-        {project.technology.map((key) => (
-          <div className={classes.technology} key={key}>
-            {key}
-          </div>
-        ))}
-        {!thinScreen && <br />}
-      </div>
-    </Link>
+    <div>
+      {project.linkOverride && (
+        <a
+          href={project.linkOverride}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.a}
+        >
+          {" "}
+          {body}
+        </a>
+      )}
+      {!project.linkOverride && (
+        <Link
+          to={`/projects/${project.name}`}
+          style={{ textDecoration: "none" }}
+        >
+          {body}
+        </Link>
+      )}
+    </div>
   );
 }
 
@@ -205,7 +221,7 @@ export default function Showcase(props) {
     <div className={classes.root} id="projects">
       <SectionHeader number="2" text="Some Things I've Built" />
       <div className={classes.firstProject}>
-        <ShowcaseProject project={RPiUPS} />
+        <ShowcaseProject project={H2Ok} />
       </div>
       <div className={classes.project}>
         {!thinScreen && <ShowcaseProject project={Hexapod} right />}

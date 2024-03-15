@@ -225,7 +225,7 @@ function ToolBar(props) {
       />
 
       <NavbarButton
-        href="/static/LAResume2023.pdf"
+        href="/static/LAResume2024.pdf"
         styles={classes}
         text="Resume"
         close={close}

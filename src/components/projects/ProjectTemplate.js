@@ -23,12 +23,13 @@ const useStyles = makeStyles((theme) => ({
     color: orange,
     paddingBottom: "3vh",
     fontFamily: fontMono,
+    fontSize: "0.6em",
   },
   children: {
     color: lslate,
     fontFamily: fontSans,
     maxWidth: "100%",
-    fontSize: (props) => (props.smallScreen ? "0.35em" : "0.5em"),
+    fontSize: (props) => (props.smallScreen ? "0.35em" : "0.3em"),
     display: "block",
   },
   outline: {

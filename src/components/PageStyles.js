@@ -22,7 +22,7 @@ const lslate = "#a8b2d1";
 const llslate = "#ccd6f6";
 const white = "#e6f1ff";
 const orange = "#FF385D";
-const slightOrange = "rgba(255, 127, 17, 0.2)";
+const slightOrange = "rgba(255, 56, 93, 0.6)";
 
 const fontSans =
   "Calibre,San Francisco,SF Pro Text,-apple-system,system-ui,sans-serif";
