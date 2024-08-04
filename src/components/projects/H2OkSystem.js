@@ -9,7 +9,7 @@ const title = "H2Ok Innovations Products";
 const path = "h2ok";
 const coverImage = "h2ok.jpg";
 const description =
-  "Since starting in 2021, I've designed multiple versions of the electronics systems at H2Ok, including the industrial sensors and gateway that make up the core product line.";
+  "From 2021 to 2024, I've designed multiple versions of the electronics systems at H2Ok, including the industrial sensors and gateway that make up the core product line.";
 const tags = {
 };
 const technology = [""];

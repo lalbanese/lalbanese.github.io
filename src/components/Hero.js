@@ -79,14 +79,10 @@ export default function Hero(props) {
       </div>
 
       <div className={classes.about}>
-        I'm a Boston-based hardware engineer designing PCBs, testing prototypes,
-        and integrating mechanical and electrical systems. Currently, I'm an
-        engineer at{" "}
-        <StyledLink
-          href="https://www.h2okinnovations.com"
-          text="H2Ok Innovations"
-        />{" "}
-        doing full stack product design of electro-mechanical systems.
+        I'm a Boston-based hardware engineer designing state-of-the-art PCBs that integrate photonics and electronics at <StyledLink
+              href="https://lightmatter.co/"
+              text="Lightmatter"
+            /> as a Board Design Electrical Engineer.
       </div>
 
       <div className={classes.buttonGroup}>

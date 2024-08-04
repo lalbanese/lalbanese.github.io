@@ -79,22 +79,21 @@ export default function About(props) {
       <Grid container spacing={3} className={classes.grid}>
         <Grid item xs={8} className={classes.gridItem}>
           <div className={classes.about}>
-            Hello! My name is Libby Albanese and I am a MechE turned EE. I
-            specialize in PCB design and build end-to-end products for{" "}
-            <StyledLink
-              href="https://www.h2okinnovations.com"
-              text="H2Ok Innovations"
-            />
-            .
+            Hello! My name is Libby Albanese and I am a MechE turned EE. I am currently designing PCBs integrating photonics and electronics on the systems team at <StyledLink
+              href="https://lightmatter.co/"
+              text="Lightmatter"
+            />.
             <br />
             <br />
             In my free time, I build robots and design embedded systems. My
-            interests are in robotics, mechatronics, and bioinspired design. I
+            interests are in PCB design, mechatronics, and bioinspired design. I
             also enjoy refereeing combat robot competitions at{" "}
-            <StyledLink href="https://www.nhrl.io" text="NHRL" />. Previously
-            I've worked at the{" "}
-            <StyledLink href="https://nolop.org/" text="Nolop Makerspace" />
-            &nbsp; and the{" "}
+            <StyledLink href="https://www.nhrl.io" text="NHRL" />. Previously,
+            I've worked at <StyledLink
+              href="https://www.h2okinnovations.com"
+              text="H2Ok Innovations"
+            />, the{" "}
+            <StyledLink href="https://nolop.org/" text="Nolop Makerspace" />, and the{" "}
             <StyledLink
               href="https://matthewawoodward.wixsite.com/rlblab"
               text="RLB Lab"
